@@ -1,0 +1,86 @@
+<mat-toolbar color="primary" id="navbar">
+    <mat-toolbar-row>
+        Where is my access?
+    </mat-toolbar-row>
+
+    <!-- <mat-toolbar-row>
+          <span>Second Line</span>
+          <span class="example-spacer"></span>
+          <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon">verified_user</mat-icon>
+        </mat-toolbar-row> -->
+<!-- 
+    <mat-toolbar-row>
+        <span>Third Line</span>
+        <span class="example-spacer"></span>
+        <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>
+        <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">delete</mat-icon>
+    </mat-toolbar-row> -->
+</mat-toolbar>
+
+<button mat-button [matMenuTriggerFor]="menu1" class="menu-button">
+    Menu
+</button>
+<mat-menu #menu1="matMenu">
+    <button mat-menu-item>Item 1</button>
+    <button mat-menu-item>Item 2</button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="menu2" class="menu-button">
+    <mat-icon>menu</mat-icon>
+</button>
+<mat-menu #menu2="matMenu">
+    <button mat-menu-item>Item 3</button>
+    <button mat-menu-item>Item 4</button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="menu3" class="menu-button">
+    <mat-icon>more_vert</mat-icon>
+</button>
+<mat-menu #menu3="matMenu">
+    <button mat-menu-item>Item 4</button>
+    <button mat-menu-item>Item 5</button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="menu4" class="menu-button">
+    Icons for menu items
+</button>
+
+<mat-menu #menu4="matMenu">
+    <button mat-menu-item>
+        <mat-icon>dialpad</mat-icon>
+        <span>Redial</span>
+    </button>
+    <button mat-menu-item disabled>
+        <mat-icon>voicemail</mat-icon>
+        <span>Check voicemail</span>
+    </button>
+    <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>Disable alerts</span>
+    </button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="aboveMenu" class="menu-button">Above</button>
+<mat-menu #aboveMenu="matMenu" yPosition="above">
+    <button mat-menu-item>Item 1</button>
+    <button mat-menu-item>Item 2</button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="belowMenu" class="menu-button">Below</button>
+<mat-menu #belowMenu="matMenu" yPosition="below">
+    <button mat-menu-item>Item 1</button>
+    <button mat-menu-item>Item 2</button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="beforeMenu" class="menu-button">Before</button>
+<mat-menu #beforeMenu="matMenu" xPosition="before">
+    <button mat-menu-item>Item 1</button>
+    <button mat-menu-item>Item 2</button>
+</mat-menu>
+
+
+<button mat-button [matMenuTriggerFor]="afterMenu" class="menu-button">After</button>
+<mat-menu #afterMenu="matMenu" xPosition="after">
+    <button mat-menu-item>Item 1</button>
+    <button mat-menu-item>Item 2</button>
+</mat-menu>

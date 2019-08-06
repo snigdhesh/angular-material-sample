@@ -1,0 +1,19 @@
+.menu-button {
+    background-color: #ea0a8e;
+    font-weight: bold;
+    color: whitesmoke;
+    margin: 0.1%;
+}
+
+#navbar {
+    background-color: #ea0a8e;
+}
+
+mat-toolbar-row {
+    border: 0px solid green;
+    text-align: center;
+    display: block;
+    font-size: 32px;
+    padding-top: 1%;
+    font-family: 'Times New Roman', Times, serif;
+}
